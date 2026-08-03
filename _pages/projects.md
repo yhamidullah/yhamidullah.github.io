@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Software I build outside the papers.
+description: Code behind the papers, and software I build alongside them.
 nav: true
 nav_order: 4
-display_categories: [software]
+display_categories: [research, software]
 horizontal: false
 ---
 
