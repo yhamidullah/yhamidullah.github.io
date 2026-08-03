@@ -1,0 +1,9 @@
+github_users:
+  - yhamidullah
+
+repo_description_lines_max: 2
+
+github_repos:
+  - yhamidullah/hallucination-slt
+  - yhamidullah/sem-slt
+  - yhamidullah/signbank-docker

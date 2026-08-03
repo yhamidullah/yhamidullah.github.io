@@ -1,0 +1,5 @@
+# Cache of citation counts, refreshed by the al_citations plugin once
+# `scholar_userid` is set in _data/socials.yml.
+metadata:
+  last_updated:
+papers: {}

@@ -1,0 +1,79 @@
+cv:
+  name: Yasser Hamidullah
+  label: Researcher — Sign Language Translation & Multimodal NLP
+  email: "" # TODO: add the address you want shown publicly
+  location: Zurich, Switzerland / Saarbrücken, Germany
+  image: ""
+  summary: >
+    Researcher at the University of Zurich and at DFKI (Multilinguality and Language Technology),
+    Saarland Informatics Campus. I work on gloss-free sign language translation, multimodal
+    grounding, and evaluation.
+
+  social_networks:
+    - network: GitHub
+      username: yhamidullah
+
+  sections:
+    Experience:
+      - company: University of Zurich
+        position: Researcher # TODO: your exact title and institute/department
+        location: Zurich, Switzerland
+        url: https://www.uzh.ch/
+        start_date: TODO
+        end_date: present
+        highlights:
+          - TODO — what you work on at UZH.
+
+      - company: German Research Center for Artificial Intelligence (DFKI)
+        position: Researcher, Multilinguality and Language Technology (MLT)
+        location: Saarland Informatics Campus, Saarbrücken, Germany
+        url: https://www.dfki.de/en/web/research/research-departments/multilinguality-and-language-technology
+        start_date: 2021 # TODO: confirm your actual start year
+        end_date: present
+        highlights:
+          - Gloss-free sign language translation with sentence-embedding supervision.
+          - Multilingual, language-agnostic SLT (SONAR-SLT).
+          - Hallucination detection and visual grounding in SLT.
+          - Contributor to the AVASAG German Sign Language translation project.
+
+    # TODO: fill in your degrees, institutions and dates. Left scaffolded rather
+    # than guessed at, since none of it was verifiable from public sources.
+    Education:
+      - institution: TODO — university name
+        location: TODO — city, country
+        area: Computer Science / Computational Linguistics
+        studyType: PhD
+        start_date: TODO
+        end_date: TODO
+        highlights:
+          - "Thesis: gloss-free learning for sign language translation."
+
+      - institution: TODO — university name
+        location: TODO — city, country
+        area: TODO
+        studyType: MSc
+        start_date: TODO
+        end_date: TODO
+
+    Skills:
+      - name: Research
+        level: Advanced
+        icon: fa-solid fa-flask
+        keywords: "Sign language translation, multimodal NLP, machine translation, vision-language models, evaluation"
+
+      - name: Engineering
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Python, PyTorch, HuggingFace Transformers, distributed training, Docker"
+
+    Languages:
+      - name: English
+        summary: "Fluent"
+
+      - name: German
+        summary: "TODO — set your level"
+
+    Interests:
+      - name: Research interests
+        icon: fa-solid fa-tag
+        keywords: "Sign language translation, gloss-free learning, multimodal grounding, hallucination detection, low-resource MT, accessibility"
