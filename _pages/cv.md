@@ -6,7 +6,7 @@ title: CV
 nav:
   false # TODO: flip to true, and delete `published: false` below,
   # once _data/cv.yml is filled in
-nav_order: 5
+nav_order: 6
 # cv_pdf: cv.pdf # drop a PDF in assets/pdf/ and uncomment to show a download button
 cv_format: rendercv # options: rendercv, jsonresume
 description: Curriculum vitae.
