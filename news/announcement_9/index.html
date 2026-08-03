@@ -38,7 +38,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Software I build outside the papers.",
+          description: "Code behind the papers, and software I build alongside them.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -86,7 +86,17 @@ ninja.data = [{
           section: "News",},{id: "news-dualfact-appears-in-findings-of-acl-2026-and-our-dfki-mlt-system-description-is-out-at-semeval-2026",
           title: '_DualFact+_ appears in **Findings of ACL 2026**, and our DFKI-MLT system description is...',
           description: "",
-          section: "News",},{id: "projects-vibe-board",
+          section: "News",},{id: "projects-hallucination-slt",
+          title: 'hallucination-slt',
+          description: "Token-level reliability measures that tell whether a sign language translation model is grounding its output in the video or guessing from language priors. Code for the ICLR 2026 paper.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/hallucination-slt/";
+            },},{id: "projects-sem-slt",
+          title: 'sem-slt',
+          description: "Gloss-free sign language translation supervised by sentence embeddings of the target text. Code for the ACL 2024 paper.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sem-slt/";
+            },},{id: "projects-vibe-board",
           title: 'Vibe Board',
           description: "A control plane for fleets of AI coding agents — plan, launch, supervise, review and measure parallel agents against any repository.",
           section: "Projects",handler: () => {
