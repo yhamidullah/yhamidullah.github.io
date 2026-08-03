@@ -13,7 +13,8 @@
   url         = {https://openreview.net/forum?id=bLFW2T3UHq},
   html        = {https://openreview.net/forum?id=bLFW2T3UHq},
   code        = {https://github.com/yhamidullah/hallucination-slt},
-  abstract    = {Sign language translation systems can produce fluent output that is not grounded in the signing video. We study visual signals that reveal when a model is grounding its translation in the video versus guessing from language priors, and use them to detect hallucinations.},
+  arxiv       = {2510.18439},
+  abstract    = {Hallucination, where models generate fluent text unsupported by visual evidence, remains a major flaw in vision-language models and is particularly critical in sign language translation (SLT). In SLT, meaning depends on precise grounding in video, and gloss-free models are especially vulnerable because they map continuous signer movements directly into natural language without intermediate gloss supervision that serves as alignment. We argue that hallucinations arise when models rely on language priors rather than visual input. To capture this, we propose a token-level reliability measure that quantifies how much the decoder uses visual information. Our method combines feature-based sensitivity, which measures internal changes when video is masked, with counterfactual signals, which capture probability differences between clean and altered video inputs. These signals are aggregated into a sentence-level reliability score, providing a compact and interpretable measure of visual grounding. We evaluate the proposed measure on two SLT benchmarks (PHOENIX-2014T and CSL-Daily) with both gloss-based and gloss-free models. Our results show that reliability predicts hallucination rates, generalizes across datasets and architectures, and decreases under visual degradations. Beyond these quantitative trends, we also find that reliability distinguishes grounded tokens from guessed ones, allowing risk estimation without references; when combined with text-based signals (confidence, perplexity, or entropy), it further improves hallucination risk estimation. Qualitative analysis highlights why gloss-free models are more susceptible to hallucinations. Taken together, our findings establish reliability as a practical and reusable tool for diagnosing hallucinations in SLT, and lay the groundwork for more robust hallucination detection in multimodal generation.},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -28,9 +29,11 @@
   address     = {Palma, Mallorca, Spain},
   publisher   = elra,
   pages       = {9535--9548},
+  url         = {https://lrec.elra.info/lrec2026-main-749},
+  html        = {https://lrec.elra.info/lrec2026-main-749},
   doi         = {10.63317/4n2sooe4fb2i},
   arxiv       = {2510.25434},
-  abstract    = {Automatic evaluation metrics are crucial for advancing sign language translation (SLT). This work examines how faithfully current metrics reflect translation quality in the SLT setting.},
+  abstract    = {Automatic evaluation metrics are crucial for advancing sign language translation (SLT). Current SLT evaluation metrics, such as BLEU and ROUGE, are only text-based, and it remains unclear to what extent text-based metrics can reliably capture the quality of SLT outputs. To address this gap, we investigate the limitations of text-based SLT evaluation metrics by analyzing six metrics, including BLEU, chrF, and ROUGE, as well as BLEURT on the one hand, and large language model (LLM)-based evaluators such as G-Eval and GEMBA zero-shot direct assessment on the other hand. Specifically, we assess the consistency and robustness of these metrics under three controlled conditions: paraphrasing, hallucinations in model outputs, and variations in sentence length. Our analysis highlights the limitations of lexical overlap metrics and demonstrates that while LLM-based evaluators better capture semantic equivalence often missed by conventional metrics, they can also exhibit bias toward LLM-paraphrased translations. Moreover, although all metrics are able to detect hallucinations, BLEU tends to be overly sensitive, whereas BLEURT and LLM-based evaluators are comparatively lenient toward subtle cases. This motivates the need for multimodal evaluation frameworks that extend beyond text-based metrics to enable a more holistic assessment of SLT outputs.},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -45,7 +48,10 @@
   address     = {Palma, Mallorca, Spain},
   publisher   = elra,
   pages       = {80--92},
+  url         = {https://lrec.elra.info/lrec2026-ws-signlang-09},
+  html        = {https://lrec.elra.info/lrec2026-ws-signlang-09},
   doi         = {10.63317/3xftynuw7i5c},
+  abstract    = {This paper presents an empirical audit of the widely used RWTH-PHOENIX-2014T corpus, examining its suitability as a benchmark for sign language recognition and translation. Through human annotation of the training set and extensive sign-to-text back translation of the test set, we provide detailed statistics that indicate substantial quality issues, including information loss and lexical errors. Automatic scores comparing human sign-to-text back translations to the original speech transcribed references are remarkably low, suggesting strong translationese effects and substantial paraphrasing, revealing limitations of lexical metrics in adequately scoring translation quality. Replacing the original speech-transcribed references with human sign-to-text back translations while scoring existing sign language translation systems reveals the lack of robustness of system evaluation with lexical metrics against this test set. Our findings highlight risks associated with relying on this corpus for model evaluation and call for more rigorous, linguistically grounded evaluation practices in sign language technology research. The back-translated test set and error annotations are made publicly available.},
   bibtex_show = {true}
 }
 
@@ -106,7 +112,7 @@
   pages       = {301--313},
   url         = {https://aclanthology.org/2025.wmt-1.18/},
   doi         = {10.18653/v1/2025.wmt-1.18},
-  abstract    = {Extends sentence-embedding supervision for sign language translation to the multilingual, language-agnostic setting using SONAR embeddings, removing the dependency on glosses while supporting translation into many spoken languages.},
+  abstract    = {Sign language translation (SLT) is typically trained with text in a single spoken language, which limits scalability and cross-language generalization. Earlier approaches have replaced gloss supervision with text-based sentence embeddings, but up to now, these remain tied to a specific language and modality. In contrast, here we employ language-agnostic, multimodal embeddings trained on text and speech from multiple languages to supervise SLT, enabling direct multilingual translation. To address data scarcity, we propose a coupled augmentation method that combines multilingual target augmentations (i.e. translations into many languages) with video-level perturbations, improving model robustness. Experiments show consistent BLEURT gains over text-only sentence embedding supervision, with larger improvements in low-resource settings. Our results demonstrate that language-agnostic embedding supervision, combined with coupled augmentation, provides a scalable and semantically robust alternative to traditional SLT training.},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -153,7 +159,7 @@
   url         = {https://aclanthology.org/2024.acl-short.40/},
   doi         = {10.18653/v1/2024.acl-short.40},
   code        = {https://github.com/yhamidullah/sem-slt},
-  abstract    = {State-of-the-art sign language translation systems rely on gloss annotations, which are costly and scarce. We instead supervise training with sentence embeddings of the target sentences, which take the role of glosses but require no manual annotation and are learned from raw textual data.},
+  abstract    = {State-of-the-art sign language translation (SLT) systems facilitate the learning process through gloss annotations, either in an end2end manner or by involving an intermediate step. Unfortunately, gloss labelled sign language data is usually not available at scale and, when available, gloss annotations widely differ from dataset to dataset. We present a novel approach using sentence embeddings of the target sentences at training time that take the role of glosses. The new kind of supervision does not need any manual annotation but it is learned on raw textual data. As our approach easily facilitates multilinguality, we evaluate it on datasets covering German (PHOENIX-2014T) and American (How2Sign) sign languages and experiment with mono- and multilingual sentence embeddings and translation systems. Our approach significantly outperforms other gloss-free approaches, setting the new state-of-the-art for data sets where glosses are not available and when no additional SLT datasets are used for pretraining, diminishing the gap between gloss-free and gloss-dependent systems.},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -182,7 +188,7 @@
   pages       = {977--982},
   url         = {https://aclanthology.org/2022.wmt-1.94/},
   arxiv       = {2510.19413},
-  abstract    = {This paper describes the DFKI-MLT submission to the WMT-SLT 2022 sign language translation task from Swiss German Sign Language (video) into German (text). Instead of relying on features that ignore temporal structure, we present a system that learns spatio-temporal feature representations and translation in a single model, resulting in a real end-to-end architecture expected to better generalize to new data sets.},
+  abstract    = {This paper describes the DFKI-MLT submission to the WMT-SLT 2022 sign language translation (SLT) task from Swiss German Sign Language (video) into German (text). State-of-the-art techniques for SLT use a generic seq2seq architecture with customized input embeddings. Instead of word embeddings as used in textual machine translation, SLT systems use features extracted from video frames. Standard approaches often do not benefit from temporal features. In our participation, we present a system that learns spatio-temporal feature representations and translation in a single model, resulting in a real end-to-end architecture expected to better generalize to new data sets. Our best system achieved 5 ± 1 BLEU points on the development set, but the performance on the test dropped to 0.11 ± 0.06 BLEU points.},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -210,6 +216,6 @@
   publisher   = {Association for Machine Translation in the Americas},
   pages       = {43--48},
   url         = {https://aclanthology.org/2021.mtsummit-at4ssl.5/},
-  abstract    = {An overview of AVASAG, an ongoing applied-research project developing a text-to-sign-language translation system for public services, covering geometry-based sign language description, a 3D animation and video corpus, a simplified annotation scheme, and the overall translation pipeline.},
+  abstract    = {This paper presents an overview of AVASAG; an ongoing applied-research project developing a text-to-sign-language translation system for public services. We describe the scientific innovation points (geometry-based SL-description, 3D animation and video corpus, simplified annotation scheme, motion capture strategy) and the overall translation pipeline.},
   bibtex_show = {true}
 }
